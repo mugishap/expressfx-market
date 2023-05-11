@@ -46,9 +46,10 @@ const AboutComponent: React.FC = () => {
           <div className='w-full grid grid-cols-4 my-6'>
             {
               facts.map((fact: IMetadata, index: number) => (
-                <div key={index} className="fact border-r border-white flex flex-col items-center justify-center">
-                  <span className='font-bold text-2xl text-white'>{fact.value}</span>
+                <div key={index} className="relative fact border-r flex flex-col items-center justify-center">
+                  <span className='font-bold text-4xl text-white'>{fact.value}</span>
                   <span className='font-light text-xs text-gray-1'>{fact.name}</span>
+                  {/* {index !== 0 && <div className='absolute h-44 rotate-[23deg] w-[2px] -left-14 -top-18 z-[8] bg-gray-100'></div>} */}
                 </div>
               ))
             }
