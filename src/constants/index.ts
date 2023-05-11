@@ -426,3 +426,22 @@ export const countries = [
     "Zimbabwe",
     "Åland Islands"
 ]
+
+export const facts: IMetadata[] = [
+    {
+        name: "MARKET CAP",
+        value: "$77.45B"
+    },
+    {
+        name: "DAILY TRANSACTIONS",
+        value: "165k"
+    },
+    {
+        name: "ACTIVE ACCOUNTS",
+        value: "1726"
+    },
+    {
+        name: "YEARS ON THE MARKET",
+        value: "17"
+    },
+]

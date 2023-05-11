@@ -7,7 +7,6 @@
   transition: all 0.3s ease-in-out;
 }
 
-
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -26,9 +25,12 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 
-#left-foot{
+#left-foot {
   clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
 }
-#right-foot{
+#right-foot {
   clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+}
+.fact {
+  clip-path: polygon(25% 0, 100% 0, 75% 100%, 0% 100%);
 }
