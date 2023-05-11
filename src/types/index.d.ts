@@ -16,7 +16,6 @@ export interface IMetadata {
 export interface ILoginData {
     email: string,
     password: string,
-    showPassword: boolean
 }
 
 export interface INavbarLink {

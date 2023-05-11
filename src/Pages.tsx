@@ -1,7 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { CommonContext } from './context'
-import NotFound from './pages/404/NotFound'
+const NotFound = React.lazy(() => import('./pages/404/NotFound'))
+const ForgotPassword = React.lazy(() => import('./pages/Auth/ForgotPassword'))
 const Contact = React.lazy(() => import('./pages/Contact/Contact'))
 const About = React.lazy(() => import('./pages/AboutUs/About'))
 const FAQ = React.lazy(() => import('./pages/FAQ/FAQ'))
@@ -25,6 +26,7 @@ const Pages: React.FC<{}> = () => {
                         <Route path="/" element={<Home />} />
                         <Route path="/auth/login" element={<Login />} />
                         <Route path="/auth/signup" element={<Signup />} />
+                        <Route path="/auth/forgot-password" element={<ForgotPassword />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/market-data" element={<MarketData />} />
                         <Route path="/faq" element={<FAQ />} />

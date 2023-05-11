@@ -6,7 +6,7 @@ const CommonComponent: React.FC<{ children: ReactNode }> = ({ children }) => {
     return (
         <div className='w-full bg-black text-white min-h-screen flex flex-col items-center justify-between'>
             <Navbar />
-            <div className='w-full min-h-[calc(100vh_-_30vh)]'>
+            <div className='w-full'>
                 {children}
             </div>
             <Footer />
