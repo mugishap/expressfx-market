@@ -1,6 +1,7 @@
 import React, { FormEvent, useState } from 'react'
 import { Bg2 } from '../../assets'
 import { toast } from 'react-toastify'
+import { Helmet } from 'react-helmet'
 
 const ForgotPasswordComponent: React.FC<{}> = () => {
 
@@ -13,6 +14,9 @@ const ForgotPasswordComponent: React.FC<{}> = () => {
 
     return (
         <div style={{ background: `url(${Bg2})`, backgroundAttachment: "fixed", backgroundSize: "cover" }} className='w-full items-center flex flex-col py-6'>
+            <Helmet>
+                <title>Forgot Password | Express FX Market</title>
+            </Helmet>
             <span className='text-5xl mb-4 font-bold text-white flex'>
                 RECOVER &nbsp;
                 <span className='text-orange'>PASSWORD</span>

@@ -5,6 +5,7 @@ import { ReCAPTCHA } from 'react-google-recaptcha'
 import { ISignupData } from '../../types'
 import { toast } from 'react-toastify'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 
 const SignupComponent: React.FC<{}> = () => {
 
@@ -26,6 +27,9 @@ const SignupComponent: React.FC<{}> = () => {
     }
     return (
         <div style={{ background: `url(${Bg2})`, backgroundAttachment: "fixed", backgroundSize: "cover" }} className='w-full min-h-[70vh] items-center flex flex-col py-6'>
+            <Helmet>
+                <title>Signup | Express FX Market</title>
+            </Helmet>
             <span className='text-5xl mb-4 font-bold text-white flex'>
                 GET &nbsp;
                 <span className='text-orange'>STARTED</span>

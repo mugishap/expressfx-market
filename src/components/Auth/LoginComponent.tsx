@@ -3,6 +3,7 @@ import { ILoginData } from '../../types'
 import { toast } from 'react-toastify'
 import { Link } from 'react-router-dom'
 import { Bg2 } from '../../assets'
+import { Helmet } from 'react-helmet'
 
 const LoginComponent: React.FC<{}> = () => {
 
@@ -19,6 +20,9 @@ const LoginComponent: React.FC<{}> = () => {
 
   return (
     <div style={{ background: `url(${Bg2})`, backgroundAttachment: "fixed", backgroundSize: "cover" }} className='w-full items-center flex flex-col py-6'>
+      <Helmet>
+        <title>Login | Express FX Market</title>
+      </Helmet>
       <span className='text-5xl mb-4 font-bold text-white flex'>
         ACCOUNT &nbsp;
         <span className='text-orange'>LOGIN</span>

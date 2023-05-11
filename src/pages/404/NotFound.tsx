@@ -1,6 +1,7 @@
 import React from 'react'
 import CommonComponent from '../../components/Common/CommonComponent'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 
 const NotFound: React.FC<{}> = () => {
     React.useEffect(() => {
@@ -8,8 +9,10 @@ const NotFound: React.FC<{}> = () => {
     }, [])
     return (
         <CommonComponent>
-
             <div className="w-full">
+                <Helmet>
+                    <title>404 | Express FX Market</title>
+                </Helmet>
                 <main className="w-full flex items-center justify-center flex-col pt-12 pb-16">
                     <section className="relative flex flex-col">
                         <div className="text-white text-[200px] font-bold z-[1] px-6">

@@ -6,7 +6,7 @@ import { IMetadata } from '../../types'
 const Footer: React.FC<{}> = () => {
     return (
         <div className='flex flex-col w-full items-center'>
-            <div className='flex w-full items-center justify-between'>
+            <div className='flex  w-full items-center justify-between'>
                 <div className="w-1/2 bg-black h-10" id='left-foot'></div>
                 <div className="w-1/2 bg-black h-10" id='right-foot'></div>
             </div>
