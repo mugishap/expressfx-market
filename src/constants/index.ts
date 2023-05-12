@@ -3,7 +3,7 @@ import { RiFacebookFill } from 'react-icons/ri'
 import { BsFillTelephoneFill, BsShareFill, BsTwitter } from 'react-icons/bs'
 import { ImGooglePlus } from 'react-icons/im'
 import { FaLinkedinIn } from 'react-icons/fa'
-import { AmericanExpress, Maestro, MasterCard, Paypal, Visa } from "../assets"
+import { AddBitcoins, AmericanExpress, BuySellBitcoins, DownloadBitcoins, Maestro, MasterCard, Paypal, Visa } from "../assets"
 import { AiFillHome } from "react-icons/ai"
 import { MdEmail } from 'react-icons/md'
 
@@ -557,4 +557,40 @@ export const frequentlyAskedQuestions: IFrequentlyAskedQuestion[] = [
         answer: "You may log into your account by clicking the login link on our website homepage and entering your email address and password in the login form"
     },
 
+]
+
+export const steps = [
+    {
+        image: DownloadBitcoins,
+        heading: "Create Your Account",
+        description: "Create your trading account with few and easy steps."
+    },
+    {
+        image: AddBitcoins,
+        heading: "Fund your trading account",
+        description: "Fund your account by making payment to the stated wallet address in the website."
+    },
+    {
+        image: BuySellBitcoins,
+        heading: "Withdraw your profit securedly",
+        description: "Place a withdraw and get it without delay via any means of payout."
+    },
+]
+
+export const siteData = [
+    {
+        name: "OUR MISSION",
+        label: "mission",
+        description: "Bitcoin is based on a protocol known as the blockchain, which allows to create, transfer and verify ultra-secure financial data without interference of third parties."
+    },
+    {
+        name: "OUR ADVANTAGES",
+        label: "advantages",
+        description: "Our mission as an official partner of Bitcoin Foundation is to help you enter and better understand the world of #1 cryptocurrency and avoid any issues you may encounter."
+    },
+    {
+        name: "OUR GUARANTEES",
+        label: "guarantees",
+        description: "We are here because we are passionate about open, transparent markets and aim to be a major driving force in widespread adoption, we are the first and the best in cryptocurrency."
+    },
 ]

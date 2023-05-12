@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { CommonContext } from './context'
-import TermsOfService from './pages/Terms/TermsOfService'
+const TermsOfService = React.lazy(() => import('./pages/Terms/TermsOfService'))
 const NotFound = React.lazy(() => import('./pages/404/NotFound'))
 const ForgotPassword = React.lazy(() => import('./pages/Auth/ForgotPassword'))
 const Contact = React.lazy(() => import('./pages/Contact/Contact'))
