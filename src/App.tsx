@@ -2,9 +2,8 @@ import { motion } from 'framer-motion'
 import React from 'react'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import 'swiper/css'
-import 'swiper/css/autoplay'
-import "swiper/css/navigation"
+import 'swiper/swiper-bundle.min.css'
+import 'swiper/swiper.min.css'
 import './App.css'
 import { SuspenseLogo } from './assets'
 const Pages = React.lazy(() => import("./Pages"))

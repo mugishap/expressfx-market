@@ -34,3 +34,11 @@ input::-webkit-inner-spin-button {
 .fact {
   clip-path: polygon(25% 0, 100% 0, 75% 100%, 0% 100%);
 }
+
+.swiper-button-prev {
+  background-color: "#fd961a";
+}
+
+.swiper-button-next {
+  background-color: "#fd961a";
+}

@@ -1,11 +1,15 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { BsAndroid2 } from 'react-icons/bs'
+import { GoQuote } from 'react-icons/go'
+import { IoLogoBitcoin } from 'react-icons/io'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { About, Bg1, Bg3, Cta, Feature } from '../../assets'
-import { siteData, steps } from '../../constants'
+import { About, Bg1, Bg3, BgCalculator, BgVideo, Cta, Feature, Partner } from '../../assets'
+import { characteristics, reviews, siteData, steps } from '../../constants'
 import CommonFooterComponent from '../Common/CommonFooterComponent'
+
+import Rating from "@mui/material/Rating"
 
 const HomeComponent: React.FC = () => {
     const [activeTab, setActiveTab] = React.useState<string>("mission")
@@ -55,7 +59,7 @@ const HomeComponent: React.FC = () => {
                     </Swiper>
                 </div>
                 <div className='w-full flex flex-col relative py-28'>
-                    <div className='absolute grid grid-cols-3 -top-20 z-[5] w-8/12 m-auto left-0 right-0 bg-slate-800 p-16 px-10'>
+                    <div className='absolute grid grid-cols-3 -top-20 z-[5] w-8/12 m-auto left-0 right-0 bg-[#1d1d1d] p-16 px-10'>
                         {
                             steps.map((step, index) => (
                                 <div className='flex w-11/12 m-auto' key={index}>
@@ -175,9 +179,140 @@ const HomeComponent: React.FC = () => {
                         <span className='ml-2 text-base'>Download App</span>
                     </button>
                 </div>
+
+                <div className='w-full bg-[#1d1d1d]  flex items-center'>
+                    <div className="w-8/12 flex justify-end py-14 items-center">
+                        <div className='w-8/12 grid grid-cols-2'>
+                            {
+                                characteristics.map((data, index) => (
+                                    <div className='flex w-9/12 m-4 mx-auto flex-col items-center' key={index}>
+                                        <img src={data.image} alt="" />
+                                        <span className="font-bold">{data.heading}</span>
+                                        <span className="text-gray-1">{data.description}</span>
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
+                    <div className='w-4/12 h-[75vh]' style={{ background: `url(${BgVideo})`, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover" }} >
+                        <div className='w-full h-full bg-black/60'></div>
+                    </div>
+                </div>
+
+                <div className='w-full z-[3] my-[9vh] h-[25vh] relative' style={{ background: `url(${BgCalculator})`, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover" }} >
+                    <div className="bg-black/60 absolute w-full h-full z-[4]"></div>
+                    <div className='absolute  h-[40vh] w-8/12 bg-[#1d1d1d] flex flex-col right-0 z-[5] shadow left-0 m-auto -top-[6vh] items-center justify-center'>
+                        <span className='text-5xl mt-8 text-center font-bold  text-white'>
+                            BITCOIN &nbsp;
+                            <span className='text-orange'>CALCULATOR</span>
+                        </span>
+                        <span className='text-gray-2 my-10'>FIND OUT THE CURRENT BITCOIN VALUE WITH OUR EASY-TO-USE CONVERTER</span>
+                        <div className='w-8/12 flex items-center justify-between'>
+                            <div className='flex w-5/12 items-center justify-center'>
+                                <input type="number" defaultValue={0} min={0} className='outline-none text-center text-xl font-bold w-8/12 border h-12 border-gray-1 bg-black text-white' />
+                                <div className='bg-orange p-3 h-fit text-white'>
+                                    <IoLogoBitcoin size={25} />
+                                </div>
+                            </div>
+                            <span className='text-2xl font-bold'>=</span>
+                            <div className='flex w-5/12 items-center justify-center'>
+                                <input type="number" defaultValue={120.34} min={0} className='outline-none text-center text-xl font-bold w-8/12 border h-12 border-gray-1 bg-black text-white' />
+                                <select className='bg-orange h-12 w-16 outline-none flex items-center justify-center text-white'>
+                                    {
+                                        ["ARS", "AUD", "BRL", "CAD", "CHF"].map((data, index) => (
+                                            <option className='bg-orange text-white py-2' key={index} value={data}>{data}</option>
+                                        ))
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                        <span className='text-gray-2 my-6 italic'>* Data updated every 15 minutes</span>
+                    </div>
+                </div>
+                <div className='w-full bg-[#1d1d1d]  flex items-center'>
+                    <div className='w-4/12 h-[75vh]' style={{ background: `url(${BgVideo})`, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover" }} >
+                        <div className='w-full  h-full bg-black/70 absolute'></div>
+                        <div className='w-10/12 m-auto flex-col z-10 h-full flex justify-center items-center'>
+                            <div className='flex flex-col relative'>
+                                <GoQuote className="text-orange" size={25} />
+                                <span className='italic text-lg text-white font-light'>
+                                    Bitcoin is one of the most important inventions in all of human history. For the first time ever, anyone can send or receive any amount of money with anyone else, anywhere on the planet, conveniently and without restriction. It's the dawn of a better, more free world.
+                                </span>
+                                <div className='w-full flex justify-end'>
+                                    <GoQuote className="text-orange rotate-180 " size={25} />
+                                </div>
+                            </div>
+                            <div className="w-full z-20 flex items-center">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" className='h-10 w-10 rounded-full object-cover bordr-whit border-2' alt="" />
+                                <span className='font-bold mx-3 text-orange'>MARC SMITH</span>
+                                <span>-</span>
+                                <span className='mx-3'>CEO</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-8/12 z-20 flex justify-end items-center">
+                        <iframe src="https://widget.coinlib.io/widget?type=chart&theme=dark&coin_id=859&pref_coin_id=1505" className='w-full  h-[75vh]'></iframe>
+                    </div>
+                </div>
+
+                <div className='w-full z-[3] my-[9vh] h-[45vh] relative' style={{ background: `url(${BgCalculator})`, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover" }} >
+                    <div className="absolute w-full h-full bg-black/70"></div>
+                    <Swiper
+                        className="z-1 w-1/2"
+                        spaceBetween={10}
+                        slidesPerView={1}
+                        navigation
+                        pagination={{ clickable: true }}
+                        autoplay={{ delay: 1, disableOnInteraction: false }}
+                    >
+                        {reviews.map((review, index) => (
+                            <SwiperSlide
+                                key={index}
+                                className="m-auto w-1/2 flex-col flex h-full items-center justify-center"
+                            >
+                                <span className="w-2/3 font-medium text-lg text-white italic font-poppins my-3">
+                                    {review.review}
+                                </span>
+                                <img
+                                    alt={Math.random().toString()}
+                                    src={review.image}
+                                    className="w-16 my-3 rounded-full object-cover"
+                                />
+                                <span className="w-full text-center font-semibold text-xl font-poppins my-3">
+                                    {review.name}
+                                </span>
+                                <span className='italic my-2 flex'>
+                                    {review.role} &nbsp; at &nbsp; <span className='text-orange'>{review.workplace}</span>
+                                </span>
+                                <Rating
+                                    name="read-only"
+                                    value={review.rating}
+                                    readOnly
+                                    className="my-2"
+                                />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
+
+                <div className='w-full flex flex-col items-center'>
+                    <span className='text-5xl mt-8 text-center w-full font-bold  text-white'>
+                        BITCOIN &nbsp;
+                        <span className='text-orange'>HIGHLIGHTS</span>
+                    </span>
+                    <div className='w-5/12 m-auto flex items-center my-8 justify-around'>
+                        <div className='bg-orange w-10 h-1'></div>
+                        <span className='text-gray-2 text-sm '>DISCOVER LATEST HIGHLIGHTS ABOUT BITCOIN AROUND THE WORLD</span>
+                        <div className='bg-orange w-10 h-1'></div>
+                    </div>
+                    <span className='font-bold text-2xl text-white mt-10 my-4'>OUR OFFICIAL PARTNER</span>
+                    <span className='font-light text-lg my-2'>We are not alone, we partner with the best</span>
+                    <img src={Partner} className='mt-4 w-4/12' alt="" />
+                </div>
+
             </div>
             <CommonFooterComponent />
-        </div>
+        </div >
     )
 }
 

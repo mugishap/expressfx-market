@@ -1,11 +1,11 @@
-import { IContact, IFrequentlyAskedQuestion, IMetadata, INavbarLink, ITermOfService } from "../types"
-import { RiFacebookFill } from 'react-icons/ri'
-import { BsFillTelephoneFill, BsShareFill, BsTwitter } from 'react-icons/bs'
-import { ImGooglePlus } from 'react-icons/im'
-import { FaLinkedinIn } from 'react-icons/fa'
-import { AddBitcoins, AmericanExpress, BuySellBitcoins, DownloadBitcoins, Maestro, MasterCard, Paypal, Visa } from "../assets"
 import { AiFillHome } from "react-icons/ai"
+import { BsFillTelephoneFill, BsShareFill, BsTwitter } from 'react-icons/bs'
+import { FaLinkedinIn } from 'react-icons/fa'
+import { ImGooglePlus } from 'react-icons/im'
 import { MdEmail } from 'react-icons/md'
+import { RiFacebookFill } from 'react-icons/ri'
+import { AddBitcoins, AmericanExpress, BuySellBitcoins, CostEfficieny, DownloadBitcoins, HighLiquidity, Maestro, MasterCard, PaymentOptions, Paypal, StrongSecurity, Visa, WorldCoverage } from "../assets"
+import { IContact, IFrequentlyAskedQuestion, IMetadata, INavbarLink, ITermOfService } from "../types"
 
 export const metadata: IMetadata[] = [
     {
@@ -594,3 +594,112 @@ export const siteData = [
         description: "We are here because we are passionate about open, transparent markets and aim to be a major driving force in widespread adoption, we are the first and the best in cryptocurrency."
     },
 ]
+
+export const characteristics = [
+    {
+        image: StrongSecurity,
+        heading: "Strong Security",
+        description: "Protection against DDoS attacks, &nbsp; full data encryption"
+    },
+    {
+        image: WorldCoverage,
+        heading: "World Coverage",
+        description: "Providing services in 99% countries &nbsp; around all the globe"
+    },
+    {
+        image: PaymentOptions,
+        heading: "Payment Options",
+        description: "Popular methods: Visa, MasterCard, &nbsp; bank transfer, cryptocurrency"
+    },
+    {
+        image: StrongSecurity,
+        heading: "Mobile App",
+        description: "Trading via our Mobile App, Available &nbsp; in Play Store & App Store"
+    },
+    {
+        image: CostEfficieny,
+        heading: "Cost Efficiency",
+        description: "Reasonable trading fees for takers &nbsp; and all market makers"
+    },
+    {
+        image: HighLiquidity,
+        heading: "High Liquidity",
+        description: "Fast access to high liquidity orderbook &nbsp; for top currency pairs"
+    },
+]
+
+export const reviews = [
+    {
+        review:
+            "I laugh a lot when I see people doubting. This company please enjoy your money with your family and thanks for trusting this company with your hard earn",
+        image: "https://avatars.githubusercontent.com/u/97700182?v=4",
+        name: "PAULINA C.",
+        role: "Media Analyst",
+        workplace: "Quora Inc.",
+        rating: 4
+    },
+    {
+        review:
+            "Thanks for the feedback and the trust keep it up. New investors can still send in there investment, this is the best platform for you ,and feel free from financial bondage",
+        image: "https://avatars.githubusercontent.com/u/97700182?v=4",
+        name: "GRACIE MOORE",
+        role: "Man. Director",
+        workplace: "Wluxin Inc.",
+        rating: 4
+    },
+    {
+        review:
+            "I'm so excited, I give gratitude to the entire staff of expressfxmarket for I have received my profit of $4000...thank you all especially to my manager.",
+        image: "https://avatars.githubusercontent.com/u/97700182?v=4",
+        name: "RAUL GARCIA",
+        role: "Media Analyst",
+        workplace: "USA",
+        rating: 4
+    },
+    {
+        review:
+            "Trading with a professional broker: solves a lot of stress and hassle, expressfxmarket.com is the best.",
+        image: "https://avatars.githubusercontent.com/u/97700182?v=4",
+        name: "PAULA WILSON",
+        role: "Athlete",
+        workplace: "Canada",
+        rating: 4
+    },
+    {
+        review:
+            "😁 congrats 🍾 Mitchell like we have said no worries 😉 when you trade with this platform the end result is profit 💯 I can see you are very happy now ... I wish most investors can be like her but fear is killing them some of them due to their past with scammers ... all I can say is try us and see if you don't get a return at no extra cost .. with us profit must be made to get started 💵🥂",
+        image: "https://avatars.githubusercontent.com/u/97700182?v=4",
+        name: "ANTONIO MORENO",
+        role: "Web Developer",
+        workplace: "Circle Ltd",
+        rating: 4
+    },
+    {
+        review:
+            "This is one of the best companies I've invested in, they give high profits and they are responsible for any loss. Thank you expressfxmarket.com",
+        image: "https://avatars.githubusercontent.com/u/97700182?v=4",
+        name: "GREGOR MARTIN.",
+        role: "Finance Analyst",
+        workplace: "Orion Ltd",
+        rating: 4
+    },
+    {
+        review:
+            "Thanks very much for your feedback congrats keep doing business with this company thanks so much for trusting me God bless you wish you more to come",
+        image: "https://avatars.githubusercontent.com/u/97700182?v=4",
+        name: "MICHAEL HOLZ",
+        role: "Seo Analyst",
+        workplace: "Oscorp Tech",
+        rating: 4
+    },
+    {
+        review:
+            "Thanks for the feedback and the trust keep it up. New investors can still send in their investment, this is the best platform for you, and feel free from financial",
+        image: "https://avatars.githubusercontent.com/u/97700182?v=4",
+        name: "KEN RICHARD",
+        role: "COO",
+        workplace: "Skynet Inc.",
+        rating: 4
+    },
+
+];
