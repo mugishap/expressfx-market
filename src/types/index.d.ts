@@ -41,3 +41,8 @@ export interface IContact {
         href: string
     }[]
 }
+
+export interface IFrequentlyAskedQuestion {
+    question: string,
+    answer: string
+}

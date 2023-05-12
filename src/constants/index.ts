@@ -1,4 +1,4 @@
-import { IContact, IMetadata, INavbarLink, ITermOfService } from "../types"
+import { IContact, IFrequentlyAskedQuestion, IMetadata, INavbarLink, ITermOfService } from "../types"
 import { RiFacebookFill } from 'react-icons/ri'
 import { BsFillTelephoneFill, BsShareFill, BsTwitter } from 'react-icons/bs'
 import { ImGooglePlus } from 'react-icons/im'
@@ -505,4 +505,56 @@ export const contacts: IContact[] = [
             { background: "orange", icon: ImGooglePlus, href: "https://www.google.com" },
         ]
     },
+]
+
+export const frequentlyAskedQuestions: IFrequentlyAskedQuestion[] = [
+    {
+        question: "WHAT IS BITCOIN ?",
+        answer: "Bitcoin is a form of digital currency which is based on an open source code that was created and is held electronically. Bitcoin is a decentralized form of currency, meaning that it does not belong to any form of government and is not controlled by anyone."
+    },
+    {
+        question: "WHO DEVELOPED BITCOIN ?",
+        answer: "The original Bitcoin code was designed by Satoshi Nakamoto under MIT open source credentials. In 2008 Nakamoto outlined the idea behind Bitcoin in his White Paper, which scientifically described how the cryptocurrency would function. Bitcoin is the first successful digital currency designed with trust in cryptography over central authorities. Satoshi left the Bitcoin code in the hands of developers and the community in 2010. Thus far hundreds of developers have added to the core code throughout the years."
+    },
+    {
+        question: "WHAT IS BITCOIN MINING ?",
+        answer: "Bitcoin mining is analogous to the mining of gold, but its digital form. The process involves specialized computers solving algorithmic equations or hash functions. These problems help miners to confirm blocks of transactions held within the network. Bitcoin mining provides a reward for miners by paying out in Bitcoin in turn the miners confirm transactions on the blockchain. Miners introduce new Bitcoin into the network and also secure the system with transaction confirmation. They are also rewarded network fees for when they harvest new coin and a time when the last bitcoin is found mining will continue."
+    },
+    {
+        question: "IS BITCOIN USED FOR ILLEGAL ACTIVITIES ?",
+        answer: "This is a yet another controversial topic. Because of the freedom and the degree of anonymity that the use of Bitcoin offers, many users who were seeking to purchase or solicit illegal goods or services initially turned to the use of Bitcoin as a method of payment."
+    },
+    {
+        question: "CAN BITCOIN BE REGULATED IN ANY WAY ?",
+        answer: "Again, when a user decides to use a specific type of software for their Bitcoin wallet, they are deciding what direction the Bitcoin network is heading towards. In other words, you need the cooperation of nearly every single user in order to modify any aspect of the Bitcoin protocol."
+    },
+    {
+        question: "IS BITCOIN ANONYMOUS ?",
+        answer: "Participants in Bitcoin transactions are identified by public addresses - those are the long strings of around 30 characters you see in a person's Bitcoin address, usually starting with the numerals '1' or '3'. For every transaction, the sending and receiving addresses are publicly-viewable."
+    },
+    {
+        question: "HOW CAN I SELL BITCOINS ?",
+        answer: "Bitcoins can be sold locally using LocalBitcoins, on Bitcoin brokerages / exchanges, using two-way Bitcoin Teller Machines (BTM's) or you can pay for a good or service with them. Bitcoins can be sold to just about anyone as long as they have a Bitcoin address, and can be sold for any fiat currency in the world or traded for a physical good. Feel free to check out our recommended list of exchanges and brokerage services to sell your bitcoins online."
+    },
+    {
+        question: "WHO CAN BE A CLIENT OF EXPRESSFXMARKET LTD ?",
+        answer: "Anyone can be a client of ExpressFxMarket LTD, but he/she must be not less 18 years old.",
+    },
+    {
+        question: "HOW CAN I BECOME A CLIENT OF EXPRESSFXMARKET LTD ?",
+        answer: "You can become a client of ExpressFxMarket LTD and it is totally free of charge. All you need is to Create an account by submitting all required information."
+    },
+    {
+        question: "IS IT FREE OF CHARGE TO OPEN AN ACCOUNT ?",
+        answer: "Yes, it is totally free of charge"
+    },
+    {
+        question: "I HAVE TROUBLE DURING REGISTERING. WHAT SHALL I DO ?",
+        answer: "Check if the data you entered on the registration is correct. Displayed errors mesages can help you resolve these issues. Sometimes it could be browser issue. Try to change your browser or turn off any translator. If you need further assistance don't hesitate to contact us"
+    },
+    {
+        question: "HOW MAY I ACCESS MY ACCOUNT ?",
+        answer: "You may log into your account by clicking the login link on our website homepage and entering your email address and password in the login form"
+    },
+
 ]
