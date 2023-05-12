@@ -1,9 +1,11 @@
-import { IMetadata, INavbarLink, ITermOfService } from "../types"
+import { IContact, IMetadata, INavbarLink, ITermOfService } from "../types"
 import { RiFacebookFill } from 'react-icons/ri'
-import { BsTwitter } from 'react-icons/bs'
+import { BsFillTelephoneFill, BsShareFill, BsTwitter } from 'react-icons/bs'
 import { ImGooglePlus } from 'react-icons/im'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { AmericanExpress, Maestro, MasterCard, Paypal, Visa } from "../assets"
+import { AiFillHome } from "react-icons/ai"
+import { MdEmail } from 'react-icons/md'
 
 export const metadata: IMetadata[] = [
     {
@@ -474,5 +476,33 @@ export const terms: ITermOfService[] = [
     {
         title: "Security",
         description: "We have implemented security measures designed to secure your information from accidental loss and from unauthorized access, use, alteration or disclosure. However, we cannot guarantee that unauthorized persons will never gain access to your information, and you acknowledge that you provide your information at your own risk, except as otherwise provided by applicable law."
+    },
+]
+
+export const contacts: IContact[] = [
+    {
+        title: "Address",
+        icon: AiFillHome,
+        data: "18th floor, 22 Bishopsgate, Lime Street, London, UK",
+    },
+    {
+        title: "Phone (Whatsapp)",
+        icon: BsFillTelephoneFill,
+        data: "+14782272523",
+    },
+    {
+        title: "Email Address",
+        icon: MdEmail,
+        data: "support@Expressfxmarket.com",
+    },
+    {
+        title: "Social Profiles",
+        icon: BsShareFill,
+        data: "",
+        socials: [
+            { background: "orange", icon: RiFacebookFill, href: "https://www.facebook.com" },
+            { background: "orange", icon: BsTwitter, href: "https://www.twitter.com" },
+            { background: "orange", icon: ImGooglePlus, href: "https://www.google.com" },
+        ]
     },
 ]

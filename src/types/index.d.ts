@@ -1,3 +1,5 @@
+import { IconType } from "react-icons"
+
 export interface ISignupData {
     fullName: string,
     email: string,
@@ -27,4 +29,15 @@ export interface INavbarLink {
 export interface ITermOfService {
     title: string,
     description: string
+}
+
+export interface IContact {
+    title: string,
+    icon: IconType,
+    data: string
+    socials?: {
+        icon: IconType,
+        background: string,
+        href: string
+    }[]
 }
