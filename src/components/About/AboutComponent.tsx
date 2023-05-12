@@ -1,10 +1,11 @@
 import React from 'react'
-import { Banner, Cta } from '../../assets'
-import { AiFillWarning } from 'react-icons/ai'
 import { Helmet } from 'react-helmet'
+import { AiFillWarning } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 import { facts } from '../../constants'
 import { IMetadata } from '../../types'
-import { Link } from 'react-router-dom'
+import CommonFooterComponent from '../Common/CommonFooterComponent'
+import CommonHeader from '../Common/CommonHeader'
 
 const AboutComponent: React.FC = () => {
   return (
@@ -12,19 +13,7 @@ const AboutComponent: React.FC = () => {
       <Helmet>
         <title>About Us | Express FX Market</title>
       </Helmet>
-      <div style={{ background: `url(${Banner})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }} className='z-[2] relative  w-full pt-20 pb-24 flex items-center justify-center'>
-        <div className='z-[3] w-full h-full top-0 absolute bg-black/60'></div>
-        <div className='flex z-[4] flex-col'>
-          <span className='text-5xl font-bold text-white flex'>
-            ABOUT &nbsp;
-            <span className='text-orange'>US</span>
-          </span>
-          <div className='w-24 h-1 m-auto bg-white my-8'></div>
-          <span className='flex m-auto'>
-            <span className='text-orange'>HOME</span>&nbsp; / &nbsp;<span>ABOUT US</span>
-          </span>
-        </div>
-      </div>
+      <CommonHeader page='ABOUT US' whiteText='ABOUT' yellowText='US' />
       <div className='w-full flex justify-center'>
         <div className='w-4/12'>
         </div>
@@ -69,16 +58,7 @@ const AboutComponent: React.FC = () => {
           </div>
         </div>
       </div>
-      <div style={{ background: `url(${Cta})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }} className='z-[2] relative  w-full pt-24 pb-28 flex items-center justify-center'>
-        <div className='z-[3] w-full h-full top-0 absolute bg-black/60'></div>
-        <div className='flex z-[4] flex-col items-center'>
-          <span className='text-3xl font-bold text-white flex'>
-            GET STARTED TODAY WITH BITCOIN
-          </span>
-          <span className='font-light my-4 text-xl'>Open account for free and start trading Bitcoins!</span>
-          <button className='text-white w-fit text-sm mt-6 bg-orange px-6 py-3 cursor-pointer'>REGISTER NOW</button>
-        </div>
-      </div>
+      <CommonFooterComponent />
     </div>
   )
 }

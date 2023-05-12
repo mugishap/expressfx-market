@@ -23,3 +23,8 @@ export interface INavbarLink {
     href: string,
     pathname: "/" | "/about" | "/market-data" | "/faq" | "/contact" | "/auth/signup" | "/auth/login"
 }
+
+export interface ITermOfService {
+    title: string,
+    description: string
+}

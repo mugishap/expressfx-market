@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { CommonContext } from './context'
+import TermsOfService from './pages/Terms/TermsOfService'
 const NotFound = React.lazy(() => import('./pages/404/NotFound'))
 const ForgotPassword = React.lazy(() => import('./pages/Auth/ForgotPassword'))
 const Contact = React.lazy(() => import('./pages/Contact/Contact'))
@@ -31,6 +32,7 @@ const Pages: React.FC<{}> = () => {
                         <Route path="/market-data" element={<MarketData />} />
                         <Route path="/faq" element={<FAQ />} />
                         <Route path="/contact" element={<Contact />} />
+                        <Route path="/terms" element={<TermsOfService />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 </BrowserRouter>
