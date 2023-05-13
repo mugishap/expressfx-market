@@ -25,8 +25,9 @@ const HomeComponent: React.FC = () => {
                     <Swiper
                         className='w-full'
                         autoplay={{
-                            delay: 2500,
+                            delay: 3000,
                         }}
+                        // navigation
                     >
                         <SwiperSlide className='w-full flex-col items-center justify-center min-h-[570px] relative z-[2]' style={{ background: `url(${Bg3})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
                             <div className='z-[3] bg-black/60 w-full h-full absolute top-0'></div>
@@ -259,11 +260,8 @@ const HomeComponent: React.FC = () => {
                     <div className="absolute w-full h-full bg-black/70"></div>
                     <Swiper
                         className="z-1 w-1/2"
-                        spaceBetween={10}
-                        slidesPerView={1}
                         navigation
-                        pagination={{ clickable: true }}
-                        autoplay={{ delay: 1, disableOnInteraction: false }}
+                        autoplay={{ delay: 3000, disableOnInteraction: true }}
                     >
                         {reviews.map((review, index) => (
                             <SwiperSlide

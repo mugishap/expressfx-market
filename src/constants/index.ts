@@ -634,7 +634,7 @@ export const reviews = [
     {
         review:
             "I laugh a lot when I see people doubting. This company please enjoy your money with your family and thanks for trusting this company with your hard earn",
-        image: "https://avatars.githubusercontent.com/u/97700182?v=4",
+        image: "https://picsum.photos/500/500",
         name: "PAULINA C.",
         role: "Media Analyst",
         workplace: "Quora Inc.",
@@ -643,7 +643,7 @@ export const reviews = [
     {
         review:
             "Thanks for the feedback and the trust keep it up. New investors can still send in there investment, this is the best platform for you ,and feel free from financial bondage",
-        image: "https://avatars.githubusercontent.com/u/97700182?v=4",
+        image: "https://picsum.photos/500/500",
         name: "GRACIE MOORE",
         role: "Man. Director",
         workplace: "Wluxin Inc.",
@@ -652,7 +652,7 @@ export const reviews = [
     {
         review:
             "I'm so excited, I give gratitude to the entire staff of expressfxmarket for I have received my profit of $4000...thank you all especially to my manager.",
-        image: "https://avatars.githubusercontent.com/u/97700182?v=4",
+        image: "https://picsum.photos/500/500",
         name: "RAUL GARCIA",
         role: "Media Analyst",
         workplace: "USA",
@@ -661,7 +661,7 @@ export const reviews = [
     {
         review:
             "Trading with a professional broker: solves a lot of stress and hassle, expressfxmarket.com is the best.",
-        image: "https://avatars.githubusercontent.com/u/97700182?v=4",
+        image: "https://picsum.photos/500/500",
         name: "PAULA WILSON",
         role: "Athlete",
         workplace: "Canada",
@@ -670,7 +670,7 @@ export const reviews = [
     {
         review:
             "😁 congrats 🍾 Mitchell like we have said no worries 😉 when you trade with this platform the end result is profit 💯 I can see you are very happy now ... I wish most investors can be like her but fear is killing them some of them due to their past with scammers ... all I can say is try us and see if you don't get a return at no extra cost .. with us profit must be made to get started 💵🥂",
-        image: "https://avatars.githubusercontent.com/u/97700182?v=4",
+        image: "https://picsum.photos/500/500",
         name: "ANTONIO MORENO",
         role: "Web Developer",
         workplace: "Circle Ltd",
@@ -679,7 +679,7 @@ export const reviews = [
     {
         review:
             "This is one of the best companies I've invested in, they give high profits and they are responsible for any loss. Thank you expressfxmarket.com",
-        image: "https://avatars.githubusercontent.com/u/97700182?v=4",
+        image: "https://picsum.photos/500/500",
         name: "GREGOR MARTIN.",
         role: "Finance Analyst",
         workplace: "Orion Ltd",
@@ -688,7 +688,7 @@ export const reviews = [
     {
         review:
             "Thanks very much for your feedback congrats keep doing business with this company thanks so much for trusting me God bless you wish you more to come",
-        image: "https://avatars.githubusercontent.com/u/97700182?v=4",
+        image: "https://picsum.photos/500/500",
         name: "MICHAEL HOLZ",
         role: "Seo Analyst",
         workplace: "Oscorp Tech",
@@ -697,7 +697,7 @@ export const reviews = [
     {
         review:
             "Thanks for the feedback and the trust keep it up. New investors can still send in their investment, this is the best platform for you, and feel free from financial",
-        image: "https://avatars.githubusercontent.com/u/97700182?v=4",
+        image: "https://picsum.photos/500/500",
         name: "KEN RICHARD",
         role: "COO",
         workplace: "Skynet Inc.",
@@ -837,4 +837,50 @@ export const topInvestors = [
         date: "01 JAN 2021",
         status: "pending"
     },
+]
+
+export const otherMarketData = [
+    {
+        date: "13-05-2023",
+        price: "$ 26,747.8",
+        volume: "$ 103.96 M",
+        change: "-0.22%"
+    },
+    {
+        date: "13-05-2023",
+        price: "$ 26,747.8",
+        volume: "$ 103.96 M",
+        change: "-0.22%"
+    },
+    {
+        date: "13-05-2023",
+        price: "$ 26,747.8",
+        volume: "$ 103.96 M",
+        change: "-0.22%"
+    },
+    {
+        date: "13-05-2023",
+        price: "$ 26,747.8",
+        volume: "$ 103.96 M",
+        change: "-0.22%"
+    },
+    {
+        date: "13-05-2023",
+        price: "$ 26,747.8",
+        volume: "$ 103.96 M",
+        change: "-0.22%"
+    },
+    {
+        date: "13-05-2023",
+        price: "$ 26,747.8",
+        volume: "$ 103.96 M",
+        change: "-0.22%"
+    },
+    {
+        date: "13-05-2023",
+        price: "$ 26,747.8",
+        volume: "$ 103.96 M",
+        change: "-0.22%"
+    },
+
 ]
