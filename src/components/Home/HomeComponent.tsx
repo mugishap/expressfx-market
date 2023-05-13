@@ -6,7 +6,7 @@ import { IoLogoBitcoin } from 'react-icons/io'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { About, Bg1, Bg3, BgCalculator, BgVideo, Cta, Feature, Partner } from '../../assets'
-import { characteristics, reviews, siteData, steps } from '../../constants'
+import { characteristics, highlights, reviews, siteData, steps, topInvestors } from '../../constants'
 import CommonFooterComponent from '../Common/CommonFooterComponent'
 
 import Rating from "@mui/material/Rating"
@@ -295,7 +295,7 @@ const HomeComponent: React.FC = () => {
                     </Swiper>
                 </div>
 
-                <div className='w-full flex flex-col items-center'>
+                <div className='w-full my-8 flex flex-col items-center'>
                     <span className='text-5xl mt-8 text-center w-full font-bold  text-white'>
                         BITCOIN &nbsp;
                         <span className='text-orange'>HIGHLIGHTS</span>
@@ -305,7 +305,56 @@ const HomeComponent: React.FC = () => {
                         <span className='text-gray-2 text-sm '>DISCOVER LATEST HIGHLIGHTS ABOUT BITCOIN AROUND THE WORLD</span>
                         <div className='bg-orange w-10 h-1'></div>
                     </div>
-                    <span className='font-bold text-2xl text-white mt-10 my-4'>OUR OFFICIAL PARTNER</span>
+                    <div className='m-auto grid grid-cols-3'>
+                        {
+                            highlights.map((highlight, index) => (
+                                <div key={index} className='flex flex-col mx-auto w-11/12 relative'>
+                                    <div className='absolute left-- top-0 bg-black/80 p-3'>{highlight.date}</div>
+                                    <img src={highlight.image} className='w-full h-72 object-cover rounded-lg' alt="" />
+                                    <span className='font-bold my-4 text-white'>
+                                        {highlight.title}
+                                    </span>
+                                    <Link to={"/about"}>
+                                        <button className="bg-orange px-6 py-3">READ MORE</button>
+                                    </Link>
+                                </div>
+                            ))
+                        }
+                    </div>
+                    <div className='w-full flex flex-col items-center my-8'>
+                        <span className='my-6 font-bold text-3xl'>TOP INVESTORS</span>
+                        <table border={2} className='text-sm border-white w-6/12'>
+                            <thead className='bg-orange p-4'>
+                                <tr>
+                                    <th className='text-white text-left border border-white p-2'>ID</th>
+                                    <th className='text-white text-left border border-white p-2'>Asset</th>
+                                    <th className='text-white text-left border border-white p-2'>Invested</th>
+                                    <th className='text-white text-left border border-white p-2'>Profit</th>
+                                    <th className='text-white text-left border border-white p-2'>Date</th>
+                                    <th className='text-white text-left border border-white p-2'>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {
+                                    topInvestors.map((investor, index) => (
+                                        <tr key={index} className=' text-white text-left'>
+                                            <td className='border border-white p-2'>{investor.id}</td>
+                                            <td className='border border-white p-2'>{investor.asset}</td>
+                                            <td className='border border-white p-2'>{investor.invested}</td>
+                                            <td className='border border-white p-2'>{investor.profit}</td>
+                                            <td className='border border-white p-2'>{investor.date}</td>
+                                            <td className='border border-white p-2'>
+                                                <span className={`w-11/12 py-1 text-sm px-4 ${investor.status === "pending" ? "bg-orange" : "bg-blue-400"}`}>
+                                                    {investor.status.toUpperCase()}
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    ))
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <span className='font-bold text-2xl text-white mt-14 my-4'>OUR OFFICIAL PARTNER</span>
                     <span className='font-light text-lg my-2'>We are not alone, we partner with the best</span>
                     <img src={Partner} className='mt-4 w-4/12' alt="" />
                 </div>

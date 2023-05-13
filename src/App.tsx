@@ -1,12 +1,18 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import { ToastContainer } from 'react-toastify'
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import 'react-toastify/dist/ReactToastify.css'
+import 'swiper/components/navigation/navigation.scss'
+import 'swiper/components/pagination/pagination.scss'
+import 'swiper/components/scrollbar/scrollbar.scss'
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
+import 'swiper/swiper.scss'
 import './App.css'
 import { SuspenseLogo } from './assets'
 const Pages = React.lazy(() => import("./Pages"))
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 function App() {
   return (

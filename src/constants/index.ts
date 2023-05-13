@@ -4,8 +4,10 @@ import { FaLinkedinIn } from 'react-icons/fa'
 import { ImGooglePlus } from 'react-icons/im'
 import { MdEmail } from 'react-icons/md'
 import { RiFacebookFill } from 'react-icons/ri'
-import { AddBitcoins, AmericanExpress, BuySellBitcoins, CostEfficieny, DownloadBitcoins, HighLiquidity, Maestro, MasterCard, PaymentOptions, Paypal, StrongSecurity, Visa, WorldCoverage } from "../assets"
+import { AddBitcoins, AmericanExpress, BuySellBitcoins, CostEfficieny, DownloadBitcoins, HighLiquidity, Maestro, MasterCard, PaymentOptions, Paypal, Post1, StrongSecurity, Visa, WorldCoverage } from "../assets"
 import { IContact, IFrequentlyAskedQuestion, IMetadata, INavbarLink, ITermOfService } from "../types"
+import { Post2 } from "../assets"
+import { Post3 } from "../assets"
 
 export const metadata: IMetadata[] = [
     {
@@ -703,3 +705,136 @@ export const reviews = [
     },
 
 ];
+
+export const highlights = [
+    {
+        date: "01 JAN",
+        title: "How Cryptocurrency Begun and Its Impact To Financial Transactions",
+        image: Post1
+    },
+    {
+        date: "17 MAR",
+        title: "Cryptocurrency - Who Are Involved With It? Words about members",
+        image: Post2
+    },
+    {
+        date: "25 FEB",
+        title: "Risks & Rewards Of Investing In Bitcoin. Pros and Cons",
+        image: Post3
+    },
+]
+
+export const topInvestors = [
+    {
+        id: "#8LNSV",
+        asset: "Ethereum",
+        invested: "$ 1,000",
+        profit: "$ 1,500",
+        date: "01 JAN 2021",
+        status: "pending"
+    },
+    {
+        id: "#8LNSV",
+        asset: "Ethereum",
+        invested: "$ 1,000",
+        profit: "$ 1,500",
+        date: "01 JAN 2021",
+        status: "invested"
+    },
+    {
+        id: "#8LNSV",
+        asset: "Ethereum",
+        invested: "$ 1,000",
+        profit: "$ 1,500",
+        date: "01 JAN 2021",
+        status: "invested"
+    },
+    {
+        id: "#8LNSV",
+        asset: "Ethereum",
+        invested: "$ 1,000",
+        profit: "$ 1,500",
+        date: "01 JAN 2021",
+        status: "invested"
+    },
+    {
+        id: "#8LNSV",
+        asset: "Ethereum",
+        invested: "$ 1,000",
+        profit: "$ 1,500",
+        date: "01 JAN 2021",
+        status: "pending"
+    },
+    {
+        id: "#8LNSV",
+        asset: "Ethereum",
+        invested: "$ 1,000",
+        profit: "$ 1,500",
+        date: "01 JAN 2021",
+        status: "pending"
+    },
+    {
+        id: "#8LNSV",
+        asset: "Ethereum",
+        invested: "$ 1,000",
+        profit: "$ 1,500",
+        date: "01 JAN 2021",
+        status: "pending"
+    },
+    {
+        id: "#8LNSV",
+        asset: "Ethereum",
+        invested: "$ 1,000",
+        profit: "$ 1,500",
+        date: "01 JAN 2021",
+        status: "invested"
+    },
+    {
+        id: "#8LNSV",
+        asset: "Ethereum",
+        invested: "$ 1,000",
+        profit: "$ 1,500",
+        date: "01 JAN 2021",
+        status: "invested"
+    },
+    {
+        id: "#8LNSV",
+        asset: "Ethereum",
+        invested: "$ 1,000",
+        profit: "$ 1,500",
+        date: "01 JAN 2021",
+        status: "invested"
+    },
+    {
+        id: "#8LNSV",
+        asset: "Ethereum",
+        invested: "$ 1,000",
+        profit: "$ 1,500",
+        date: "01 JAN 2021",
+        status: "invested"
+    },
+    {
+        id: "#8LNSV",
+        asset: "Ethereum",
+        invested: "$ 1,000",
+        profit: "$ 1,500",
+        date: "01 JAN 2021",
+        status: "pending"
+    },
+    {
+        id: "#8LNSV",
+        asset: "Ethereum",
+        invested: "$ 1,000",
+        profit: "$ 1,500",
+        date: "01 JAN 2021",
+        status: "invested"
+    },
+    {
+        id: "#8LNSV",
+        asset: "Ethereum",
+        invested: "$ 1,000",
+        profit: "$ 1,500",
+        date: "01 JAN 2021",
+        status: "pending"
+    },
+]
