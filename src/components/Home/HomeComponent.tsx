@@ -60,10 +60,10 @@ const HomeComponent: React.FC = () => {
                     </Swiper>
                 </div>
                 <div className='w-full flex flex-col relative py-28'>
-                    <div className='absolute grid grid-cols-3 -top-20 z-[5] w-8/12 m-auto left-0 right-0 bg-[#1d1d1d] p-16 px-10'>
+                    <div className='absolute grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 -top-20 z-[5] w-10/12 md:w-8/12 m-auto left-0 right-0 bg-[#1d1d1d] p-16 px-10'>
                         {
                             steps.map((step, index) => (
-                                <div className='flex w-11/12 m-auto' key={index}>
+                                <div className='flex my-4 w-full lg:w-11/12 m-auto' key={index}>
                                     <img width={50} className='' src={step.image} />
                                     <span className='flex ml-3 flex-col'>
                                         <span className='font-bold'>{step.heading}</span>

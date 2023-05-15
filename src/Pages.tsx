@@ -14,11 +14,12 @@ const Login = React.lazy(() => import('./pages/Auth/Login'))
 
 
 const Pages: React.FC<{}> = () => {
-
+    const [showMenu, setShowMenu] = React.useState<boolean>(false)
     return (
         <CommonContext.Provider
             value={{
-
+                showMenu,
+                setShowMenu
             }}
         >
             <div>

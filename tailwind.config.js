@@ -15,7 +15,7 @@ export default {
       'sm': '640px',
       'sm10': '650px',
       'md': '768px',
-      'mlg': '800px',
+      'mlg': '825px',
       'lg': '1024px',
       'plg': '1135px',
       'mxl': '1335px',
